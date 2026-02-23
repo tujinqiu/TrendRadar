@@ -2,10 +2,9 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: "0 6/2 * * *" # 每 30 分钟运行一次
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
-# 添加权限设置
 permissions:
   contents: write
 
@@ -29,29 +28,20 @@ jobs:
 
       - name: Verify required files
         run: |
-          echo "🔍 检查必需的配置文件..."
-
+          echo "Checking config files..."
           if [ ! -f config/config.yaml ]; then
-            echo "❌ 错误: config/config.yaml 文件不存在"
-            echo "请参考项目文档创建配置文件"
+            echo "Error: config/config.yaml not found"
             exit 1
           fi
-
           if [ ! -f config/frequency_words.txt ]; then
-            echo "❌ 错误: config/frequency_words.txt 文件不存在"
-            echo "请参考项目文档创建频率词配置文件"
+            echo "Error: config/frequency_words.txt not found"
             exit 1
           fi
-
-          echo "✅ 配置文件检查通过"
+          echo "Config files OK"
 
       - name: Run crawler
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
-          WEWORK_WEBHOOK_URL: ${{ secrets.WEWORK_WEBHOOK_URL }}
           GITHUB_ACTIONS: true
         run: python main.py
 
