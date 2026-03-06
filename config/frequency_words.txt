@@ -22,6 +22,11 @@
 怪异
 不可思议
 /匪夷所思|令人震惊/
+/\bbizarre\b|\bweird\b|\bstrange\b/i
+/\bshocking\b|\bcrazy\b|\binsane\b/i
+/\bwtf\b|\bunbelievable\b/i
+/\bflorida man\b/i
+/\bviral\b/i
 
 [悬案/犯罪]
 失踪
@@ -35,6 +40,12 @@
 通缉
 毒枭
 黑帮
+/\bmurder\b|\bkill(?:ed|ing|er)\b/i
+/\bmissing\b|\bdisappear/i
+/\bserial killer\b|\bcold case\b/i
+/\bkidnap\b|\babduct/i
+/\bdrug lord\b|\bcartel\b/i
+/\bheist\b|\brobbery\b|\bfraud\b/i
 
 [神秘/超自然]
 外星人
@@ -47,6 +58,11 @@
 怪物
 神秘
 麦田怪圈
+/\balien\b|\bUFO\b|\bextraterrestrial/i
+/\bparanormal\b|\bsupernatural\b|\bhaunted\b/i
+/\bmystery\b|\bmysterious\b/i
+/\bdeep sea\b|\bgiant\b|\bmutant\b/i
+/\bconspiracy\b/i
 
 [名人八卦]
 /好莱坞|Hollywood/
@@ -58,6 +74,10 @@
 实锤
 反转
 曝光
+/\bscandal\b|\baffair\b|\bdivorce\b/i
+/\bcelebrity\b|\bfamous\b/i
+/\bcontrovers/i
+/\bexposed\b|\bleak(?:ed)?\b/i
 
 [王室/政要]
 /王室|皇室|王妃|王子|公主/

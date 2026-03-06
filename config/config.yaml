@@ -145,9 +145,37 @@ rss:
       name: "Reddit 未解之谜"
       url: "https://www.reddit.com/r/UnresolvedMysteries/.rss"
 
+    - id: "reddit-truecrime"
+      name: "Reddit 真实犯罪"
+      url: "https://www.reddit.com/r/TrueCrime/.rss"
+
+    - id: "reddit-offbeat"
+      name: "Reddit 奇闻异事"
+      url: "https://www.reddit.com/r/offbeat/.rss"
+
+    - id: "reddit-weird"
+      name: "Reddit Weird"
+      url: "https://www.reddit.com/r/weird/.rss"
+
+    - id: "reddit-entertainment"
+      name: "Reddit 娱乐八卦"
+      url: "https://www.reddit.com/r/entertainment/.rss"
+
     - id: "bbc-world"
       name: "BBC World"
       url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+
+    - id: "reuters-world"
+      name: "Reuters World"
+      url: "https://www.reutersagency.com/feed/?best-topics=world&post_type=best"
+
+    - id: "odditycentral"
+      name: "Oddity Central 猎奇"
+      url: "https://www.odditycentral.com/feed"
+
+    - id: "atlasobscura"
+      name: "Atlas Obscura 冷知识"
+      url: "https://www.atlasobscura.com/feeds/latest"
 
     # === 科技 ===
     - id: "hacker-news"
