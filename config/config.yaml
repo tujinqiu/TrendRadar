@@ -165,9 +165,9 @@ rss:
       name: "BBC World"
       url: "https://feeds.bbci.co.uk/news/world/rss.xml"
 
-    - id: "reuters-world"
-      name: "Reuters World"
-      url: "https://www.reutersagency.com/feed/?best-topics=world&post_type=best"
+    - id: "reuters-odd"
+      name: "Reuters 奇闻"
+      url: "https://www.reddit.com/r/NewsOfTheWeird/.rss"
 
     - id: "odditycentral"
       name: "Oddity Central 猎奇"
